@@ -12,6 +12,7 @@ class Timeline extends Component {
 		tweets: [],
 		newTweet: '',
 	};
+	
 	async componentDidMount(){
 		this.subscribeToEvents();
 		const response = await api.get('tweets');
